@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@import 'lenis/dist/lenis.css';
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-border: var(--secondary-border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-figtree: var(--font-figtree);
+  --color-scroll-top-surface: #bfbfb1;
+  --color-scroll-top-foreground: #524d47;
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #ffffff;
+  --foreground: #213547;
+  --card: #ffffff;
+  --card-foreground: #213547;
+  --popover: #ffffff;
+  --popover-foreground: #213547;
+  --primary: #646cff;
+  --primary-foreground: #ffffff;
+  --secondary: #eaeaff;
+  --secondary-foreground: #213547;
+  --secondary-border: #d0d0f0;
+  --muted: #f5f5ff;
+  --muted-foreground: #6e6e73;
+  --accent: #42d392;
+  --accent-foreground: #213547;
+  --destructive: #ff6464;
+  --border: #e4e4f0;
+  --input: #e4e4f0;
+  --ring: #646cff;
+  --chart-1: #646cff;
+  --chart-2: #42d392;
+  --chart-3: #bd34fe;
+  --chart-4: #ffb800;
+  --chart-5: #ff6464;
+  --sidebar: #eaeaff;
+  --sidebar-foreground: #213547;
+  --sidebar-primary: #646cff;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #dedeff;
+  --sidebar-accent-foreground: #213547;
+  --sidebar-border: #d0d0f0;
+  --sidebar-ring: #646cff;
+  --scroll-top-surface: #646cff;
+  --scroll-top-foreground: #ffffff;
+  --contact-surface-top: #5058e8;
+  --contact-gradient: linear-gradient(180deg,
+      var(--contact-surface-top),
+      #646cff 20%,
+      #8b92ff);
+  --contact-radial-highlight: radial-gradient(ellipse 80% 50% at 50% -20%,
+      rgba(255, 255, 255, 0.25),
+      transparent);
+  --contact-form-bg: rgba(255, 255, 255, 0.15);
+  --contact-form-border: rgba(255, 255, 255, 0.25);
+  --contact-form-shadow: 0 4px 30px rgba(80, 88, 232, 0.2);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+@keyframes orb-float-1 {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(10vw, 8vh) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-5vw, 12vh) scale(0.95);
+  }
+}
+
+@keyframes orb-float-2 {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(-12vw, -6vh) scale(1.05);
+  }
+
+  66% {
+    transform: translate(8vw, -10vh) scale(1.1);
+  }
+}
+
+@keyframes orb-float-3 {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(-8vw, 10vh) scale(1.08);
+  }
+
+  66% {
+    transform: translate(6vw, -8vh) scale(0.92);
+  }
+}
+
+@layer utilities {
+  .animate-orb-1 {
+    animation: orb-float-1 20s ease-in-out infinite;
+  }
+
+  .animate-orb-2 {
+    animation: orb-float-2 25s ease-in-out infinite;
+  }
+
+  .animate-orb-3 {
+    animation: orb-float-3 22s ease-in-out infinite;
+  }
+
+  .bg-contact-gradient {
+    background-image: var(--contact-gradient);
+  }
+
+  .bg-contact-radial-highlight {
+    background-image: var(--contact-radial-highlight);
+  }
+
+  .surface-contact-form {
+    background-color: var(--contact-form-bg);
+    border-color: var(--contact-form-border);
+    box-shadow: var(--contact-form-shadow);
+  }
+}

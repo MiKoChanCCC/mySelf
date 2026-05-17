@@ -1,0 +1,119 @@
+{
+  "Metadata": {
+    "title": "陈思洋 - 前端开发者",
+    "description": "陈思洋 - 前端开发者"
+  },
+  "Nav": {
+    "home": "首页",
+    "services": "服务",
+    "works": "作品",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "Header": {
+    "roleMobile1": "前端",
+    "roleMobile2": "开发者",
+    "roleDesktop": "前端开发者"
+  },
+  "NavOverlay": {
+    "emailLabel": "电子邮箱",
+    "copyEmail": "复制邮箱",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "github": "Github"
+  },
+  "Hero": {
+    "tagline": "作为前端开发者，我致力于打造高性能、现代化、工程化的前端环境。",
+    "cta": "联系我",
+    "availabilityMobileLine1": "我在",
+    "availabilityMobileLine2": "求职中",
+    "availabilityDesktop": "我在求职中"
+  },
+  "WhatIDo": {
+    "heading": "我能做什么",
+    "label": "我能为您带来",
+    "intro": "我专注于构建高性能、高颜值的前端页面，并借助AI辅助开发提升迭代效率，为团队分担基础开发与部署工作",
+    "services": [
+      {
+        "number": "01",
+        "title": "前端开发",
+        "description": "我使用现代前端技术栈构建高质量页面，同时保持对新技术的学习活力，长期贡献于项目优化。",
+        "skills": [
+          "JavaScript(ES6+)",
+          "React、Tailwind CSS、Ant Design",
+          "Git、Webpack、Vite、Node.js"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "性能与优化",
+        "description": "熟悉浏览器渲染原理、代码分割、懒加载等优化技术。",
+        "skills": [
+          "React框架lazyLoad",
+          "JS面向对象",
+          "渲染线程优化"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "AI 辅助",
+        "description": "我使用各种 AI 工具加速开发，并在项目中实践“AI 生成 + 人工理解”的工作模式，保持对技术本质的追求。",
+        "skills": [
+          "Claude Code、Cursor、Antigravity",
+          "重构与拓展功能",
+          "人工理解与评审"
+        ]
+      }
+    ]
+  },
+  "About": {
+    "line1": "开发者",
+    "line2": "设计师",
+    "line3": "创造者/",
+    "skillsHeading": "技术栈",
+    "skillGroups": [
+      {
+        "title": "语言"
+      },
+      {
+        "title": "框架与库"
+      },
+      {
+        "title": "工具与网络"
+      }
+    ],
+    "aboutImageAlt": "关于配图",
+    "lead": "我是前端开发者，专注打造高性能数字产品，在复杂业务逻辑与流畅用户体验之间找到平衡。",
+    "aboutLabel": "（关于我）",
+    "p1": "从 React Hooks、Redux 到 React Router，我使用现代前端技术构建结构清晰、可维护的前端应用。我关注性能优化——通过懒加载、代码分割和浏览器渲染原理的优化，让页面既流畅又好用。",
+    "p2": "同时，我深度使用 AI 编程工具（Claude Code、Cursor、Antigravity）加速原型搭建与配置调试，并坚持“生成 + 理解”的工作模式，确保代码质量与可维护性。"
+  },
+  "Contact": {
+    "heading": "一起把想法落地",
+    "subheading": "有岗位想聊聊？"
+  },
+  "Form": {
+    "namePlaceholder": "您的姓名",
+    "emailPlaceholder": "您的邮箱",
+    "messagePlaceholder": "请简要描述您提供的岗位",
+    "nameRequired": "请输入姓名",
+    "emailRequired": "请输入邮箱",
+    "emailInvalid": "请输入有效的邮箱地址",
+    "messageRequired": "请描述您的岗位",
+    "submitSending": "发送中…",
+    "submitIdle": "联系我！",
+    "successTitle": "收到！我会尽快回复您。",
+    "successAgain": "再发一条",
+    "errorTitle": "出错了，请重试。",
+    "errorBack": "返回"
+  },
+  "Footer": {
+    "menu": "菜单",
+    "socials": "社交媒体",
+    "wechat": "微信",
+    "wechatQrAlt": "微信二维码",
+    "github": "Github",
+    "localTime": "江西",
+    "scrollToTop": "回到顶部"
+  }
+}
